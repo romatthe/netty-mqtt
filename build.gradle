@@ -6,13 +6,15 @@ plugins {
 group 'com.github.romatthe'
 version '0.1-SNAPSHOT'
 
-sourceCompatibility = 1.8
+sourceCompatibility = 1.11
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
+    implementation 'io.netty:netty-handler:4.1.43.Final'
+    implementation 'io.netty:netty-codec-mqtt:4.1.43.Final'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
